@@ -1,0 +1,11 @@
+main: me.Haakon.Main
+name: Test
+author: Håkon
+version: 1.0
+api-version: '1.8.8'
+
+commands:
+  broadcast:
+    usage: "/broadcast <text>"
+    aliases: [bc]
+    description: "Broadcast a message"
