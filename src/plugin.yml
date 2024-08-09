@@ -9,3 +9,28 @@ commands:
     usage: "/broadcast <text>"
     aliases: [bc]
     description: "Broadcast a message"
+
+  gamemodeselector:
+    usage: "/gamemodeselector"
+    aliases: [gmsl]
+    description: "Select gamemode"
+
+  gmc:
+    usage: "/gmc [<Player>]"
+    aliases: [creative]
+    description: "Set gamemode to CREATIVE"
+  gms:
+    usage: "/gms [<Player>]"
+    aliases: [survival]
+    description: "Set gamemode to SURVIVAL"
+  gmsp:
+    usage: "/gmsp [<Player>]"
+    aliases: [spectator]
+    description: "Set gamemode to SPECTATOR"
+  gma:
+    usage: "/gma [<Player>]"
+    aliases: [adventure]
+    description: "Set gamemode to ADVENTURE"
+  fly:
+    usage: "/fly [<Player>]"
+    description: "Toggle flight"
