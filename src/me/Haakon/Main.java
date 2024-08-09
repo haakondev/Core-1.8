@@ -29,6 +29,7 @@ public class Main extends JavaPlugin {
         this.getCommand("gmsp").setExecutor(new GamemodeSpectatorCommand());
         this.getCommand("gma").setExecutor(new GamemodeAdventureCommand());
         this.getCommand("fly").setExecutor(new FlyCommand());
+        this.getCommand("vanish").setExecutor(new VanishCommand());
 
 
         Bukkit.getConsoleSender().sendMessage("§8§m-----------------------------");

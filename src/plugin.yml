@@ -34,3 +34,5 @@ commands:
   fly:
     usage: "/fly [<Player>]"
     description: "Toggle flight"
+  vanish:
+    aliases: [v]

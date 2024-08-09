@@ -39,7 +39,7 @@ public class FlyCommand implements CommandExecutor {
             p = Bukkit.getPlayer(args[0]);
         }
         else if (!(sender instanceof Player)) {
-            sender.sendMessage("&cYou can't do this!");
+            sender.sendMessage(tc("&cYou can't do this!"));
             return true;
         } else {
             p = (Player) sender;
@@ -48,6 +48,8 @@ public class FlyCommand implements CommandExecutor {
         if (p == null) {
             sender.sendMessage(prefix + tc("&c" + args[0] + " is offline!"));
             return true;
+        } else if ((Player) sender != p) {
+            sender.sendMessage(prefix + tc("You toggled " + p.getDisplayName() + "'s fly ability"));
         }
 
         fly(p);

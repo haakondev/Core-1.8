@@ -19,7 +19,7 @@ public class GamemodeSelector implements CommandExecutor {
 
         if (!(sender instanceof Player)) {
 
-            sender.sendMessage("&cYou can't do this!");
+            sender.sendMessage(tc("&cYou can't do this!"));
             return false;
 
         }

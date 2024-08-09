@@ -21,9 +21,9 @@ public class GamemodeSurvivalCommand implements CommandExecutor {
         }
 
         if (args.length >= 1) {
-            p = Bukkit.getPlayer(args[1]);
+            p = Bukkit.getPlayer(args[0]);
         } else if (!(sender instanceof Player)) {
-            sender.sendMessage("&cYou can't do this!");
+            sender.sendMessage(tc("&cYou can't do this!"));
             return true;
         } else {
             p = (Player) sender;
@@ -32,6 +32,8 @@ public class GamemodeSurvivalCommand implements CommandExecutor {
         if (p == null) {
             sender.sendMessage(prefix + tc("&c" + args[0] + " is offline!"));
             return true;
+        } else if ((Player) sender != p) {
+            sender.sendMessage(prefix + tc("&cYou set " + p.getDisplayName() + "'s gamemode to &c&lSURVIVAL"));
         }
 
         p.sendMessage(prefix + tc("Your gamemode has been set to &c&lSURVIVAL"));
